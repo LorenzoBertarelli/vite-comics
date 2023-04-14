@@ -95,6 +95,7 @@ export default {
     li {
         margin: 0.5rem;
         list-style: none;
+        padding: 64px 0;
 
         a {
             color: $text-color;
@@ -103,9 +104,12 @@ export default {
 
         &.color-list,
         &:hover {
-          color: $primary;
-          border-bottom: 3px solid $primary;
+          color:$primary;
+          border-bottom: 3px solid currentColor;
           height: 100%;
+          a {
+            color: currentColor;
+          }
         } 
     }
 }

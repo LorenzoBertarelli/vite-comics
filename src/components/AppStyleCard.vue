@@ -28,4 +28,10 @@ export default {
 h4 {
     color: white;
 }
+
+img {
+    max-width: 100%;
+    height: 100px;
+    width: 100px;
+}
 </style>
