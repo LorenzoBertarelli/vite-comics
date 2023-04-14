@@ -68,7 +68,7 @@ export default {
             </a>
             <nav>
                 <ul class="list-header">
-                    <li v-for="link in links" :class="link.current ? 'color-list' : ''">
+                    <li v-for="(link,index) in links" :key="index" :class="link.current ? 'color-list' : ''">
                         <a href="link.url">{{ link.text }}</a>
                     </li>
                 </ul>
@@ -81,7 +81,7 @@ export default {
 @use "../style/partials/mixins" as *;
 @use "../style/partials/variables" as *;
 .title {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     height: 150px;
     list-style: none;
