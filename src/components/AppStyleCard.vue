@@ -27,6 +27,7 @@ export default {
 
 h4 {
     color: white;
+    max-width: 100px;
 }
 
 img {
